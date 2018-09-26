@@ -24,3 +24,10 @@ modules:
         sha256: 51d8e5d8e6eab405a713dcb635bfbff75c3187fdf8a0c5e16d5bec400a81a758
       - type: patch
         path: elementary-theme.patch
+      # Upstream does not support this package
+      - type: shell
+        commands:
+          - >
+            sed -e 's|danrabbit/harvey/issues|flathub/com.github.danrabbit.harvey/issues|'
+            -e 's|<url type="homepage">http://danielfore.com</url>||'
+            -i data/com.github.danrabbit.harvey.appdata.xml.in
