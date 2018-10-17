@@ -1,8 +1,8 @@
 id: com.github.danrabbit.harvey
-base: io.elementary.Loki.BaseApp
-base-version: stable
+base: io.elementary.BaseApp
+base-version: juno
 runtime: org.freedesktop.Platform
-runtime-version: '1.6'
+runtime-version: '18.08'
 sdk: org.freedesktop.Sdk
 command: com.github.danrabbit.harvey
 finish-args:
