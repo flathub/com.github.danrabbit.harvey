@@ -1,0 +1,4 @@
+{
+  "end-of-life": "This flatpak is unmaintained and out of date. It is recommended to install from a source officially supported by elementary.",
+  "skip-appstream-check": true
+}
