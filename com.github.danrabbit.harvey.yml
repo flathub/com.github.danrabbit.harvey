@@ -1,18 +1,15 @@
 id: com.github.danrabbit.harvey
 base: io.elementary.BaseApp
-base-version: juno
+base-version: 'juno-19.08'
 runtime: org.freedesktop.Platform
-runtime-version: '18.08'
+runtime-version: '19.08'
 sdk: org.freedesktop.Sdk
 command: com.github.danrabbit.harvey
 finish-args:
   - --share=ipc
   - --socket=x11
   - --socket=wayland
-  - --talk-name=ca.desrt.dconf
-  - --env=DCONF_USER_CONFIG_DIR=.config/dconf
-  - --filesystem=xdg-run/dconf
-  - --filesystem=~/.config/dconf:ro
+  - --metadata=X-DConf=migrate-path=/com/github/danrabbit/harvey/
 cleanup:
   - /include
 modules:
